@@ -25,7 +25,7 @@ public class Patients {
         private String contact;
         private String address;
 
-        @OneToMany(mappedBy = "patients", cascade = CascadeType.ALL)
+        @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
         private List<MedicalRecords> records;
 
 

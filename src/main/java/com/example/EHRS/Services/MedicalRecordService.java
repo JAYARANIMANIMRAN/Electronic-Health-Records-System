@@ -1,7 +1,5 @@
 package com.example.EHRS.Services;
 
-
-
 import com.example.EHRS.Models.MedicalRecords;
 import com.example.EHRS.Models.Patients;
 import com.example.EHRS.Repository.MedicalRecordRepository;
