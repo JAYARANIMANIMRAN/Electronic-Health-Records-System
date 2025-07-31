@@ -24,12 +24,7 @@ public class Patients {
         private Date dob;
         private String contact;
         private String address;
-
-        @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
-        private List<MedicalRecords> records;
-
-
-
+        private String email;
 
 }
 
