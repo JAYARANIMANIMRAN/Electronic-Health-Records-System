@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MedicalRecordRepository extends JpaRepository<MedicalRecords, Long> {
 
-    MedicalRecords save(MedicalRecords record);
+//    MedicalRecords save(MedicalRecords record);
 }
