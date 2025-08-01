@@ -1,24 +1,22 @@
 package com.example.EHRS.Models;
 
+import com.example.EHRS.Enum.Role;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String username;
-
+    private String name;
+    private String email;
     private String password;
 
-    private String email;
-
-    private String role; // e.g., ADMIN, DOCTOR, PATIENT, RECEPTIONIST
+    @Enumerated(EnumType.STRING)
+    private Role role;
 }
